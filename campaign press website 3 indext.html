@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campaign Press | Premium Printing Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== GLOBAL ===== */
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body {
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c92d2);
+background-size:400% 400%;
+animation: gradientMove 12s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes gradientMove {
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+/* ===== NAVBAR ===== */
+nav{
+position:fixed;
+width:100%;
+padding:20px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:center;
+gap:40px;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00eaff;
+}
+
+/* ===== HERO ===== */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.hero img{
+width:300px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+}
+
+.hero h1{
+font-size:55px;
+margin-top:20px;
+}
+
+.hero p{
+font-size:22px;
+margin:15px 0;
+}
+
+.btn{
+padding:15px 35px;
+border:none;
+border-radius:30px;
+background:#00eaff;
+font-size:18px;
+cursor:pointer;
+transition:0.4s;
+box-shadow:0 0 20px #00eaff;
+}
+
+.btn:hover{
+background:white;
+color:black;
+box-shadow:0 0 30px white;
+}
+
+/* ===== SECTIONS ===== */
+section{
+padding:100px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:60px;
+font-size:40px;
+color:#00eaff;
+}
+
+/* ===== SERVICES ===== */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:0.4s;
+backdrop-filter:blur(15px);
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(0,234,255,0.2);
+}
+
+/* ===== SLIDER ===== */
+.slider{
+position:relative;
+max-width:900px;
+margin:auto;
+overflow:hidden;
+border-radius:20px;
+}
+
+.slides{
+display:flex;
+width:300%;
+animation:slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+}
+
+@keyframes slide{
+0%{transform:translateX(0)}
+33%{transform:translateX(-100%)}
+66%{transform:translateX(-200%)}
+100%{transform:translateX(0)}
+}
+
+/* ===== CONTACT ===== */
+.contact-box{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:20px;
+text-align:center;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+iframe{
+width:100%;
+height:300px;
+border:none;
+border-radius:20px;
+margin-top:30px;
+}
+
+/* ===== WHATSAPP BUTTON ===== */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px #25D366;
+}
+
+/* ===== FOOTER ===== */
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+<img src="logo.png">
+<h1>Campaign Press</h1>
+<p>Professional Litho Printing Services</p>
+<a href="#contact"><button class="btn">Get Free Quote</button></a>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Business Cards</div>
+<div class="card">Flyers</div>
+<div class="card">Magazines</div>
+<div class="card">Brochures</div>
+<div class="card">Boxes</div>
+<div class="card">Diaries</div>
+<div class="card">Reading Books</div>
+<div class="card">Exam Pads</div>
+<div class="card">Desk Calendars</div>
+<div class="card">Catalogues</div>
+<div class="card">Die Cutting</div>
+<div class="card">Labels</div>
+<div class="card">Signage</div>
+<div class="card">Stationary</div>
+<div class="card">Signs</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Our Work</h2>
+<div class="slider">
+<div class="slides">
+<img src="print1.jpg">
+<img src="print2.jpg">
+<img src="print3.jpg">
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact-box">
+<p><strong>Email:</strong> campaignpress1@gmail.com</p>
+<p><strong>Phone:</strong> 011 474 6708</p>
+<p><strong>Address:</strong> 334 Leader Avenue, Stormill, Roodepoort</p>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button class="btn">Send Message</button>
+
+<iframe src="https://maps.google.com/maps?q=334%20Leader%20Avenue%20Stormill%20Roodepoort&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/27114746708" target="_blank">
+Chat on WhatsApp
+</a>
+
+<footer>
+© 2026 Campaign Press | High Quality Printing Solutions
+</footer>
+
+</body>
+</html>
